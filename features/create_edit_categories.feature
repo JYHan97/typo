@@ -17,7 +17,6 @@ Feature: Create categories
     
     Then I follow "test_category_name"
     
-    When I fill in "category_name" with "test_category_name_change"
+    When I fill in "category_name" with "name_change"
     And I press "Save"
-    Then I should see "test_category_name_change"
-    Then I should not see "test_category_name"
+    Then I should see "name_change"
